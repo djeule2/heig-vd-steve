@@ -1,0 +1,102 @@
+router1#show run
+Building configuration...
+
+Current configuration : 1467 bytes
+!
+version 12.1
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname router1
+!
+!
+!
+!
+!
+!
+ip subnet-zero
+!
+!
+!
+!
+interface Loopback0
+ description LoopBack Routeur 1 L0
+ ip address 10.60.6.1 255.255.255.255
+!
+interface Ethernet0
+ description Interface connecter au routeur 2
+ ip address 192.168.5.129 255.255.255.192
+ media-type 10BaseT
+!
+interface Ethernet1
+ description Interface conncter a la station A
+ ip address 192.168.5.1 255.255.255.192
+ media-type 10BaseT
+!
+interface Ethernet2
+ ip address 192.168.0.5 255.255.255.0
+ media-type 10BaseT
+!
+interface Ethernet3
+ no ip address
+ shutdown
+ media-type 10BaseT
+!
+interface Ethernet4
+ no ip address
+ shutdown
+ media-type 10BaseT
+!
+interface Ethernet5
+ no ip address
+ shutdown
+ media-type 10BaseT
+!
+interface Serial0
+ no ip address
+ shutdown
+ no fair-queue
+!
+interface Serial1
+ no ip address
+ shutdown
+!
+interface Serial2
+ no ip address
+ shutdown
+!
+interface Serial3
+ no ip address
+ shutdown
+!
+interface TokenRing0
+ no ip address
+ shutdown
+!
+interface TokenRing1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ network 10.60.6.1 0.0.0.0 area 6
+ network 150.150.6.0 0.0.0.255 area 6
+ network 200.60.6.0 0.0.0.255 area 6
+!
+ip classless
+ip route 192.168.5.64 255.255.255.192 192.168.5.130
+ip route 192.168.6.0 255.255.255.0 Ethernet2
+ip route 192.168.6.64 255.255.255.192 Ethernet2
+no ip http server
+!
+!
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+!
+end
+
+router1#

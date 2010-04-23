@@ -1,0 +1,12 @@
+Parcours effectué par nos locomotives :
+
+Locomotives 1 :
+
+	Emplacement de départ : 22 
+	Parcours principal : 3 4 9 10 15 16 21 22 
+	Parcours d'évitement : 18 23 - 24 5 - 6 11 - 12 17
+	
+Locomotives 2 :
+	
+	Emplacement de départ : 15 
+	Parcours principal : 15 16 21 22 25 26 13 10 9 4 3 19 20 8 7 15

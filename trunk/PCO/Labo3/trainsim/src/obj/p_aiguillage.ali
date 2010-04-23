@@ -1,0 +1,76 @@
+V "GNAT Lib v4.3"
+A -O0
+A -g
+A -gnatA
+P SS ZX
+R nnnvnnnnnvnnnnnnnnnnnnnnnnvnvnnnnnnnnnnvnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U p_aiguillage%b	p_aiguillage.adb	7986d7ea NE PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+
+U p_aiguillage%s	p_aiguillage.ads	9593b3f0 EE NE PK
+W p_section%s		p_section.adb		p_section.ali
+
+D ada.ads		20070406091342 9c7dd3ea
+D a-except.ads		20070606104609 ba3e26e2
+D a-finali.ads		20070606101851 9eaacebd
+D a-filico.ads		20051115140645 9299732a
+D a-ioexce.ads		20070406091342 be0900a0
+D a-stream.ads		20061031174905 34aca5be
+D a-tags.ads		20071213102130 e10285b3
+D a-textio.ads		20071213102052 bc6e78fe
+D a-tienio.ads		20060215092843 213fedba
+D a-unccon.ads		20070406091342 51e09df2
+D gl.ads		20090205120411 c226b9d6
+D interfac.ads		20051209172227 a69cad5c
+D i-c.ads		20070406091342 bc3ef662
+D i-cstrea.ads		20070406092312 e1e064a9
+D p_aiguillage.ads	20090205120411 9779c104
+D p_aiguillage.adb	20090205120411 eeff16ee
+D p_couleur.ads		20090205120411 68d851fd
+D p_section.ads		20090205120411 02ea72f4
+D system.ads		20090825132454 e2b32c27
+D s-crtl.ads		20070406092312 ef997abb
+D s-exctab.ads		20070912115821 5c1c61ae
+D s-ficobl.ads		20070814084926 8bb681e5
+D s-finimp.ads		20070606101344 9449f4cb
+D s-finroo.ads		20070814084926 1408f9d1
+D s-parame.ads		20070814084525 f32e56e9
+D s-secsta.ads		20070912115821 7bae3621
+D s-soflin.ads		20071213103411 2b67bae6
+D s-stache.ads		20070912115821 257b3be8
+D s-stalib.ads		20070912115821 9ac44ca2
+D s-stoele.ads		20070912115821 1104c881
+D s-stoele.adb		20071213103502 e9998c78
+D s-stratt.ads		20070406092920 b4bf338e
+D s-traent.ads		20070912115821 bd5f2753
+D s-unstyp.ads		20070912115821 c0f9fae5
+D s-wchcon.ads		20071213102052 ab028799
+D text_io.ads		20070406091342 7c37c8ff
+X 15 p_aiguillage.ads
+28K9*P_Aiguillage 117l5 117e17 16|23b14 95l5 95t17
+37I17*T_Aiguillage_Id{natural} 46r38 67r37 107r30 16|44r36
+40R14*T_Aiguillage 43r35 86r52 98r41 104c9 115e14 16|50r17 68r51 87r36
+43P8*T_Aiguillage_Ptr(40R14) 46r67 70r13 16|47r12
+46A14*T_Aiguillages(43P8)<integer>
+66V13*Newaiguillage{43P8} 67>14 68>14 69>14 16|43b12 52l7 52t20
+67i14 Noaiguillage{37I17} 16|44b13 50r31
+68e14 Sousaiguillage{18|116E8} 16|45b13 50r45
+69p14 Section{18|1186P9} 16|46b13 50r61
+86U14*Dirigeraiguillage 86=33 87>33 16|68b13 76l7 76t24
+86r33 Aiguillage{40R14} 16|68b32 73r23 74r23
+87e33 Direction{18|120E14} 16|69b32 73r46
+98V13*Section{18|217P8} 98>22 16|87b12 93t6
+98r22 Aiguillage{40R14} 16|87b21 91r36
+107i12*Numeroaiguillage{37I17}
+110e12*Sousaiguillage{18|116E8} 16|74r34
+113p6*Section{18|1186P9} 16|73m34 91r47
+X 18 p_section.ads
+36K9*P_Section 15|26w6 68r37 69r37 87r52 99r13 110r28 113r15 16|45r36 46r36
+. 69r51 73r5 88r12 91r12 18|2488e14
+116E8*T_Aiguillage_Type 15|68r47 110r38 16|45r46 18|116e52
+120E14*T_Direction 15|87r62 16|69r61 18|120e48
+217P8*T_Section_Ptr(209R8) 15|99r23 16|88r22 91r22
+1186P9*T_Aiguillage_Ptr(1182R14) 15|69r47 113r25 16|46r46
+1215x19*Diriger 16|73R15
+

@@ -1,0 +1,90 @@
+V "GNAT Lib v4.3"
+A -O0
+A -g
+A -gnatA
+P SS ZX
+R nnnvnnnnnnnnnnnnnnnnnnnnnnvnvnnnnnnnnnnvnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U p_contact%b		p_contact.adb		2df78505 NE PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W p_couleur%s		p_couleur.adb		p_couleur.ali
+
+U p_contact%s		p_contact.ads		247b1321 EE NE PK
+W p_section%s		p_section.adb		p_section.ali
+
+D ada.ads		20070406091342 9c7dd3ea
+D a-except.ads		20070606104609 ba3e26e2
+D a-finali.ads		20070606101851 9eaacebd
+D a-filico.ads		20051115140645 9299732a
+D a-ioexce.ads		20070406091342 be0900a0
+D a-stream.ads		20061031174905 34aca5be
+D a-tags.ads		20071213102130 e10285b3
+D a-textio.ads		20071213102052 bc6e78fe
+D a-tienio.ads		20060215092843 213fedba
+D a-unccon.ads		20070406091342 51e09df2
+D gl.ads		20090205120411 c226b9d6
+D interfac.ads		20051209172227 a69cad5c
+D i-c.ads		20070406091342 bc3ef662
+D i-cstrea.ads		20070406092312 e1e064a9
+D p_contact.ads		20090205120411 269161d5
+D p_contact.adb		20090205120411 63beb52d
+D p_couleur.ads		20090205120411 68d851fd
+D p_section.ads		20090205120411 02ea72f4
+D system.ads		20090825132454 e2b32c27
+D s-crtl.ads		20070406092312 ef997abb
+D s-exctab.ads		20070912115821 5c1c61ae
+D s-ficobl.ads		20070814084926 8bb681e5
+D s-finimp.ads		20070606101344 9449f4cb
+D s-finroo.ads		20070814084926 1408f9d1
+D s-parame.ads		20070814084525 f32e56e9
+D s-secsta.ads		20070912115821 7bae3621
+D s-soflin.ads		20071213103411 2b67bae6
+D s-stache.ads		20070912115821 257b3be8
+D s-stalib.ads		20070912115821 9ac44ca2
+D s-stoele.ads		20070912115821 1104c881
+D s-stoele.adb		20071213103502 e9998c78
+D s-stratt.ads		20070406092920 b4bf338e
+D s-traent.ads		20070912115821 bd5f2753
+D s-unstyp.ads		20070912115821 c0f9fae5
+D s-wchcon.ads		20071213102052 ab028799
+D text_io.ads		20070406091342 7c37c8ff
+X 15 p_contact.ads
+29K9*P_Contact 162l5 162e14 16|29b14 166l5 166t14
+39I11*T_Contact_Id{natural} 52r29 55r37 64r27 101r47 135r34 156r29 16|45r35
+. 96r48
+46R8*T_Contact 49r32 79r38 117r39 149r37 153c9 160e14 16|51r17 69r40 140r45
+. 158r38
+49P8*T_Contact_Ptr(46R8) 52r55 137r12 16|47r13
+52A8*T_Contacts(49P8)<integer> 100r47 16|95r48
+55A8*T_Contacts_Actives(boolean)<integer>
+64i3*Contact_Null{39I11} 16|118r25
+79V12*Estactive{boolean} 79>22 16|140b19 147l14 147t23
+79r22 Contact{46R8} 16|140b29 145r46
+99U13*Est_Un_Contact 99>28 100>28 101<28 102<28 16|94b14 124l8 124t22
+99i28 Section_Id{18|133I11} 16|94b29 105r12
+100a28 Contacts{52A8} 16|95b29 101r17 105r42 111r24
+101i28 Contact_Id{39I11} 16|96b29 111m11 118m12
+102b28 Vrai{boolean} 16|97b29 110m11 117m12
+117V12*Section_Id{18|133I11} 117>23 16|69b13 75l8 75t18
+117r23 Contact{46R8} 16|69b24 73r31
+135V12*Newcontact{49P8} 135>23 136>23 16|45b13 53l8 53t18
+135i23 Nocontact{39I11} 16|45b24 51r28
+136p23 Section{18|217P8} 16|46b24 51r39
+149U13*Paint 149>21 16|158b14 164l8 164t13
+149r21 Contact{46R8} 16|158b22 162r31
+156i18*Nocontact{39I11} 16|111r37
+158p18*Section{18|217P8} 16|73r39 105r55 145r54 162r39
+X 16 p_contact.adb
+101i11 Id{integer} 105r51 111r33
+X 17 p_couleur.ads
+42K9*P_Couleur 16|27w6 162r48 17|82e14
+52n23*Bleu_Contact{52E8} 16|162r58
+X 18 p_section.ads
+36K9*P_Section 15|27w6 99r47 118r12 136r34 158r27 16|46r35 70r13 73r14 94r48
+. 105r25 145r25 162r7 18|2488e14
+133I11*T_Section_Id{natural} 15|99r57 118r22 16|70r23 94r58
+217P8*T_Section_Ptr(209R8) 15|136r44 158r37 16|46r45
+2277V13*Estoccuper{boolean} 16|145r35
+2302V13*Numero{133I11} 16|73r24 105r35
+2317U14*Mettrecouleur 16|162r17
+

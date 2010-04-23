@@ -1,0 +1,169 @@
+V "GNAT Lib v4.3"
+A -O0
+A -g
+A -gnatA
+P SS ZX
+R nnnnnvnnnnnnnnnvnnvnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U p_maquette.display%b	p_maquette-display.adb	d411be49 NE PK
+W gl%s			gl.ads			gl.ali
+W glu%s			glu.ads			glu.ali
+W glut%s		glut.adb		glut.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W p_afficher%s		p_afficher.adb		p_afficher.ali
+W p_maquette%s		p_maquette.adb		p_maquette.ali
+W p_maquette.display%s	p_maquette-display.adb	p_maquette-display.ali
+W p_maquette.display.opengl_callback%s  p_maquette-display-opengl_callback.adb  p_maquette-display-opengl_callback.ali
+W p_messages%s		p_messages.ads		p_messages.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+U p_maquette.display%s	p_maquette-display.ads	4680e14a EE NE PK
+W p_maquette%s		p_maquette.adb		p_maquette.ali
+
+D ada.ads		20070406091342 9c7dd3ea
+D a-calend.ads		20070912131154 e18fa1bf
+D a-except.ads		20070606104609 ba3e26e2
+D a-finali.ads		20070606101851 9eaacebd
+D a-filico.ads		20051115140645 9299732a
+D a-ioexce.ads		20070406091342 be0900a0
+D a-stream.ads		20061031174905 34aca5be
+D a-tags.ads		20071213102130 e10285b3
+D a-textio.ads		20071213102052 bc6e78fe
+D a-tideio.ads		20060215092843 14eafd1e
+D a-tienio.ads		20060215092843 213fedba
+D a-tifiio.ads		20060215092843 fffdeb6a
+D a-tiflio.ads		20060215092843 5d91823c
+D a-tiinio.ads		20060215092843 949a7272
+D a-timoio.ads		20060215092843 9379d0d0
+D a-unccon.ads		20070406091342 51e09df2
+D calendar.ads		20070406091342 81c96233
+D gl.ads		20090205120411 c226b9d6
+D glu.ads		20090205120411 c902cb4d
+D glut.ads		20090205120411 286b15ad
+D interfac.ads		20051209172227 a69cad5c
+D i-c.ads		20070406091342 bc3ef662
+D i-cexten.ads		20051209172227 28ce4493
+D i-cstrin.ads		20071114151445 841d8a31
+D i-cstrea.ads		20070406092312 e1e064a9
+D p_afficher.ads	20090205120411 b1bd3b66
+D p_aiguillage.ads	20090205120411 9779c104
+D p_contact.ads		20090205120411 269161d5
+D p_couleur.ads		20090205120411 68d851fd
+D p_maquette.ads	20090205120411 708f0301
+D p_maquette-display.ads  20090205120411 360fe24b
+D p_maquette-display.adb  20090205120411 07424267
+D p_maquette-display-opengl_callback.ads  20090205120411 e7880c7b
+D p_messages.ads	20090205120411 143bc47f
+D p_section.ads		20090205120411 02ea72f4
+D p_train.ads		20090205120411 e14ab08d
+D system.ads		20090825132454 e2b32c27
+D s-atacco.ads		20061031181603 60789a20
+D s-crtl.ads		20070406092312 ef997abb
+D s-exctab.ads		20070912115821 5c1c61ae
+D s-ficobl.ads		20070814084926 8bb681e5
+D s-finimp.ads		20070606101344 9449f4cb
+D s-finroo.ads		20070814084926 1408f9d1
+D s-osinte.ads		20071213101844 d8d17ef4
+D s-parame.ads		20070814084525 f32e56e9
+D s-secsta.ads		20070912115821 7bae3621
+D s-soflin.ads		20071213103411 2b67bae6
+D s-stache.ads		20070912115821 257b3be8
+D s-stausa.ads		20071213103435 653209dc
+D s-stalib.ads		20070912115821 9ac44ca2
+D s-stoele.ads		20070912115821 1104c881
+D s-stoele.adb		20071213103502 e9998c78
+D s-stratt.ads		20070406092920 b4bf338e
+D s-tasinf.ads		20071213101844 268f0cd4
+D s-taspri.ads		20050905074606 5ce832d1
+D s-taskin.ads		20070814085009 07168b8a
+D s-taprob.ads		20061031181144 5e00115c
+D s-tpoben.ads		20070606101344 af64fa42
+D s-traent.ads		20070912115821 bd5f2753
+D s-unstyp.ads		20070912115821 c0f9fae5
+D s-wchcon.ads		20071213102052 ab028799
+D text_io.ads		20070406091342 7c37c8ff
+X 18 gl.ads
+38K9*GL 4184e7 32|50w6 69r7
+X 19 glu.ads
+41K9*GLU 685e8 32|52w6 71r7
+X 20 glut.ads
+17K9*Glut 869e9 32|48w6 67r7
+71N4*GLUT_RGB 32|236r40
+75N4*GLUT_DOUBLE 32|236r25
+78N4*GLUT_DEPTH 32|236r52
+88N4*GLUT_RIGHT_BUTTON 32|221r22
+327U14*glutInit 32|228r5
+331U14*glutInitDisplayMode 32|236r5
+341U14*glutInitWindowPosition 32|231r5 264r7
+346U14*glutInitWindowSize 32|232r5 265r7
+351U14*glutMainLoop 32|281r5
+360V13*glutCreateWindow{integer} 32|239r25 268r24
+428U14*glutShowWindow 32|278r5
+478V13*glutCreateMenu{integer} 32|157r23 172r24 187r21 196r21 203r23 209r18
+494U14*glutAddMenuEntry 32|159r7 160r7 161r7 162r7 163r7 164r7 165r7 166r7
+. 167r7 168r7 174r7 175r7 176r7 177r7 178r7 179r7 180r7 181r7 182r7 183r7
+. 189r7 190r7 191r7 192r7 198r7 199r7 205r7 206r7 216r7 217r7 218r7
+500U14*glutAddSubMenu 32|211r7 212r7 213r7 214r7 215r7
+529U14*glutAttachMenu 32|221r7
+539U14*glutDisplayFunc 32|243r5 271r7
+544U14*glutReshapeFunc 32|245r5
+550U14*glutKeyboardFunc 32|249r5
+556U14*glutMouseFunc 32|247r5
+585U14*glutIdleFunc 32|253r5
+605U14*glutSpecialFunc 32|251r5
+X 21 interfac.ads
+38K9*Interfaces 173e15 32|54r6 73r7 76r32
+X 22 i-c.ads
+18K20*C 230e17 32|54r17 73r18 76r43
+X 24 i-cstrin.ads
+38K22*Strings 108e25 32|54w19 76r45
+52P9*chars_ptr(character) 32|76r53
+X 26 p_afficher.ads
+42K9*P_Afficher 327e15 32|63w6 289r9 290r9
+111U19*Put_Line_Dans_Zone_Reserv 32|289r20 290r20
+X 30 p_maquette.ads
+69K9*P_Maquette 935e15 31|47r9 95r5 32|56r6 57r5 65r14 295r5
+X 31 p_maquette-display.ads
+47K20*Display 30|69k9 31|95l16 95e23 32|56r17 57r16 65b25 295l16 295t23
+51i3*Simulator_Window{integer} 32|239m5
+53i3*Legend_Window{integer} 32|268m7
+86U13*Display_Simulator 32|126b13 292l7 292t24
+90i3 SimWin_Width{integer} 32|232r24
+91i3 SimWin_Height{integer} 32|232r38
+92i3 LegWin_Width{integer} 32|265r26
+93i3 LegWin_Height{integer} 32|265r40
+X 32 p_maquette-display.adb
+76P8 Chars_Ptr_Ptr(24|52P9) 85r10
+80i3 argc{integer} 81m21 228m14
+85p3 argv{76P8} 86m21 228r27
+136U15 Create_Menus 136b15 223l9 223t21 256r5
+140i7 Menu_Id{integer} 209m7
+143i7 SM_Rotate_Id{integer} 157m7 211r59
+145i7 SM_Incline_Id{integer} 172m7 212r59
+147i7 SM_Zoom_Id{integer} 187m7 213r59
+149i7 SM_Mode_Id{integer} 196m7 214r59
+151i7 SM_Icones_Id{integer} 203m7 215r59
+X 33 p_maquette-display-opengl_callback.ads
+57K28*OpenGL_Callback 32|56w25 57r24 33|239e39
+67U13*Init_Scene 32|261r5
+78U13*Display_Callback 32|243r21
+90U13*Reshape_Callback 32|245r21
+105U13*Mouse_Callback 32|247r19
+120U13*Keyboard_Callback 32|249r22
+135U13*Special_Key_Callback 32|251r21
+146U13*Idle_Callback 32|253r18
+157U13*Menu 32|209r33
+169U13*Sub_Menu_Rotate 32|157r38 172r39
+181U13*Sub_Menu_Display 32|187r36
+193U13*Sub_Menu_Mode 32|196r36
+205U13*Sub_Menu_Icones 32|203r38
+216U13*Legend_Init_Scene 32|275r7
+237U13*Legend_Display_Callback 32|271r23
+X 34 p_messages.ads
+22K9*P_Messages 32|60w6 60r23 239r42 268r41 290r46 34|136e15
+50a3*Titre{string} 32|239r53
+51a3*Titre_Legende{string} 32|268r52
+118a3*Erreur_Anormale{string} 32|290r57
+

@@ -1,0 +1,406 @@
+V "GNAT Lib v4.3"
+A -O0
+A -g
+A -gnatA
+P SS ZX
+R nnnvnnnvnnnnvnnvnnvnvnvvnnvnvnnnnnnnnvvvnvnnnvnnnvnnnnvnvvnnnnv2nv3nv2+nnnv1+nn
+
+U train_handler.server%b  train_handler-server.adb  32912b28 PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.streams%s		a-stream.ads		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
+W ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W interfaces%s		interfac.ads		interfac.ali
+W p_afficher%s		p_afficher.adb		p_afficher.ali  AD
+W p_aiguillage%s	p_aiguillage.adb	p_aiguillage.ali
+W p_contact%s		p_contact.adb		p_contact.ali
+W p_couleur%s		p_couleur.adb		p_couleur.ali
+W p_maquette%s		p_maquette.adb		p_maquette.ali  AD
+W p_messages%s		p_messages.ads		p_messages.ali
+W p_section%s		p_section.adb		p_section.ali
+W p_train%s		p_train.adb		p_train.ali
+W system%s		system.ads		system.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W system.val_enum%s	s-valenu.adb		s-valenu.ali
+W text_io%s		text_io.ads		text_io.ali
+W train_handler%s	train_handler.adb	train_handler.ali
+W tunnel%s		tunnel.adb		tunnel.ali  AD
+W unchecked_deallocation%s
+
+U train_handler.server%s  train_handler-server.ads  6bf19210 EE NE PK
+W train_handler%s	train_handler.adb	train_handler.ali
+
+D ada.ads		20070406091342 9c7dd3ea
+D a-calend.ads		20070912131154 e18fa1bf
+D a-except.ads		20070606104609 ba3e26e2
+D a-finali.ads		20070606101851 9eaacebd
+D a-filico.ads		20051115140645 9299732a
+D a-ioexce.ads		20070406091342 be0900a0
+D a-stream.ads		20061031174905 34aca5be
+D a-tags.ads		20071213102130 e10285b3
+D a-textio.ads		20071213102052 bc6e78fe
+D a-tideio.ads		20060215092843 14eafd1e
+D a-tienau.ads		20060215092843 671c7a9a
+D a-tienio.ads		20060215092843 213fedba
+D a-tienio.adb		20070606102111 ba330dab
+D a-tifiio.ads		20060215092843 fffdeb6a
+D a-tiflio.ads		20060215092843 5d91823c
+D a-tiinau.ads		20060215092843 2625f681
+D a-tiinio.ads		20060215092843 949a7272
+D a-tiinio.adb		20060215092843 cf5588a9
+D a-timoio.ads		20060215092843 9379d0d0
+D a-unccon.ads		20070406091342 51e09df2
+D a-uncdea.ads		20070406091342 dc667e6d
+D calendar.ads		20070406091342 81c96233
+D gl.ads		20090205120411 c226b9d6
+D gnat.ads		20050905075125 96410e68
+D g-socket.ads		20090825124735 0a32cee8
+D interfac.ads		20051209172227 a69cad5c
+D i-c.ads		20070406091342 bc3ef662
+D i-cstrea.ads		20070406092312 e1e064a9
+D p_afficher.ads	20090205120411 b1bd3b66
+D p_afficher.adb	20090205120411 b676fe45
+D p_aiguillage.ads	20090205120411 9779c104
+D p_contact.ads		20090205120411 269161d5
+D p_couleur.ads		20090205120411 68d851fd
+D p_maquette.ads	20090205120411 708f0301
+D p_messages.ads	20090205120411 143bc47f
+D p_section.ads		20090205120411 02ea72f4
+D p_train.ads		20090205120411 e14ab08d
+D system.ads		20090825132454 e2b32c27
+D s-atacco.ads		20061031181603 60789a20
+D s-crtl.ads		20070406092312 ef997abb
+D s-exctab.ads		20070912115821 5c1c61ae
+D s-ficobl.ads		20070814084926 8bb681e5
+D s-finimp.ads		20070606101344 9449f4cb
+D s-finroo.ads		20070814084926 1408f9d1
+D s-imenne.ads		20071213103004 97a402ea
+D s-osinte.ads		20071213101844 d8d17ef4
+D s-parame.ads		20070814084525 f32e56e9
+D s-secsta.ads		20070912115821 7bae3621
+D s-soflin.ads		20071213103411 2b67bae6
+D s-stache.ads		20070912115821 257b3be8
+D s-stausa.ads		20071213103435 653209dc
+D s-stalib.ads		20070912115821 9ac44ca2
+D s-stoele.ads		20070912115821 1104c881
+D s-stoele.adb		20071213103502 e9998c78
+D s-stratt.ads		20070406092920 b4bf338e
+D s-tasinf.ads		20071213101844 268f0cd4
+D s-taspri.ads		20050905074606 5ce832d1
+D s-taskin.ads		20070814085009 07168b8a
+D s-taprob.ads		20061031181144 5e00115c
+D s-tpoben.ads		20070606101344 af64fa42
+D s-tpobop.ads		20070814085009 ccd38b83
+D s-tasren.ads		20070814085009 5bda31d2
+D s-tassta.ads		20070406091910 93202c70
+D s-traent.ads		20070912115821 bd5f2753
+D s-unstyp.ads		20070912115821 c0f9fae5
+D s-valenu.ads		20050905075125 9e547a01
+D s-wchcon.ads		20071213102052 ab028799
+D text_io.ads		20070406091342 7c37c8ff
+D train_handler.ads	20090205120411 f94a11ea
+D train_handler-server.ads  20090205120411 92bb83fa
+D train_handler-server.adb  20090205120411 aad149d4
+D tunnel.ads		20090205120411 ffe21b9d
+D tunnel.adb		20090205120411 0d144ae3
+D unchdeal.ads		20070406091342 66b7fd29
+X 29 p_afficher.ads
+42K9*P_Afficher 327e15 71|54w6 327r37 330r27 334r31 336r31 341r6 428r6 429r6
+. 430r6 432r6 434r6 436r6 437r6 439r6 444r12 445r12 447r12 451r12 458r12
+. 465r36 466r15 467r15 469r15 471r15 472r15 481r12 482r12 484r12 488r12 494r12
+. 501r36 502r15 503r15 505r15 507r15 508r15 517r12 518r12 520r12 524r12 530r12
+. 536r36 537r15 538r15 540r15 542r15 543r15 552r12 553r12 555r12 559r12 565r12
+. 571r36 572r15 573r15 575r15 577r15 578r15 584r6 852r6 853r6 854r6 855r6
+. 857r6 859r6 863r6 866r6 867r6 869r6 871r6 889r6 890r6 894r6 895r6 896r6
+. 898r6 900r6 904r6 905r6 906r6 924r9 925r9 927r9 929r9 931r9 932r9 935r9
+58U13*Reserver_Affichage 71|428r17 852r17
+68U19*Liberer_Affichage 71|584r17 906r17 935r20
+87U13*Look_Ahead 71|451r23 488r23 524r23 559r23
+95U19*New_Line_Dans_Zone_Reserv 71|429r17 436r17 439r17 444r23 466r26 471r26
+. 481r23 502r26 507r26 517r23 537r26 542r26 552r23 572r26 577r26 853r17 866r17
+. 871r17 894r17 905r17 924r20 931r20
+100U19*Skip_Line 71|458r23 472r26 494r23 508r26 530r23 543r26 565r23 578r26
+. 863r17 890r17 904r17 932r20
+104U19*Put_Dans_Zone_Reserv 71|447r23 484r23 520r23 555r23 855r17 857r17
+. 859r17 867r17 869r17 889r17 896r17 898r17 900r17
+111U19*Put_Line_Dans_Zone_Reserv 71|430r17 432r17 434r17 437r17 445r23 467r26
+. 469r26 482r23 503r26 505r26 518r23 538r26 540r26 553r23 573r26 575r26 854r17
+. 895r17 925r20 927r20 929r20
+121k11*Integer_Io 147e17 71|327r48
+127U15*Get 71|862r24[327] 903r24[327]
+130U15*Put_Dans_Zone_Reserv 71|856r24[327] 858r24[327] 868r24[327] 870r24[327]
+. 897r24[327] 899r24[327]
+291k11*Enumeration_Io 316e21 71|330r38 334r42 336r42 341r17
+297U15*Get 71|455r23[330] 491r33[340] 527r27[334] 562r27[336]
+324X3*Data_Error 71|465r47 501r47 536r47 571r47
+X 31 p_aiguillage.ads
+28K9*P_Aiguillage 117e17 71|59w6 663r9
+37I17*T_Aiguillage_Id{natural} 71|663r22
+X 32 p_contact.ads
+29K9*P_Contact 162e14 71|58w6 683r43
+39I11*T_Contact_Id{natural} 71|683r53
+X 33 p_couleur.ads
+42K9*P_Couleur 82e14 71|61w6 360r17 360r40 833r10
+52E8*T_Couleur 55e79 71|360r27 360r50 842r22 847r23
+55n23*Magenta{52E8} 71|844r23
+X 34 p_maquette.ads
+69K9*P_Maquette 935e15 71|55w6 387r7 392r7 587r6 602r6 617r6 662r6 683r6
+. 701r6 775r6 795r6 882r6 914r11
+80X3*Faux_Contact 71|914r22
+189U13*Init 71|587r17
+233U13*Posertrain 71|882r17
+233i24 Trainid{37|94I11} 71|883r29
+234i24 Notrain{integer} 71|882r29
+235i24 Contactid_A{32|39I11} 71|884r29
+236i24 Contactid_B{32|39I11} 71|885r29
+238e24 Couleur{33|52E8} 71|886r29
+295U13*Mettremodesimulation 71|392r18
+295b35 Continu{boolean} 71|393r10
+296b35 Affichage{boolean} 71|395r10
+297b35 Rebond{boolean} 71|397r10
+314U13*Mettrevitessetrain 71|701r17 795r17
+332U13*Changerdirectiontrain 71|775r17
+354U13*Dirigeraiguillage 71|662r17
+369U13*Attendreactivationcontact 71|683r17
+386U13*Activer 71|617r17
+400U13*Desactiver 71|602r17
+433w13*Etat_Maquette 71|387r18
+435Y12 Prete 71|387r32
+X 35 p_messages.ads
+22K9*P_Messages 136e15 71|60w6 334r57 336r57 341r32 394r13 394r46 396r13
+. 396r40 398r13 398r40 433r29 438r15 446r21 448r21 468r24 470r24 483r21 485r21
+. 491r37 504r24 506r24 519r21 521r21 527r31 539r24 541r24 554r21 556r21 562r31
+. 574r24 576r24 854r50 855r45 867r44 869r44 889r45 895r49 926r18 928r18 930r18
+25E8*T_Mode_Aff 25e27 71|334r68 396r24
+28E8*T_Mode_Reb 28e27 71|336r68 398r24
+31E8*T_Mode_Execution 31e33 71|341r43 394r24
+36e3*Mode_fonc{31E8} 71|394r57 491m48
+41e3*Mode_Aff{25E8} 71|396r51 527m42
+44e3*Mode_Rebond{28E8} 71|398r51 562m42
+50a3*Titre{string} 71|433r40
+54a3*Copyright{string} 71|438r26
+55a3*Quel_Maquette{string} 71|446r32
+56a3*Choix_Maquette{string} 71|448r32
+57a3*Erreur_Maquette{string} 71|468r35
+58a3*Recommencer{string} 71|470r35 506r35 541r35 576r35
+59a3*Quel_Mode_Exe{string} 71|483r32
+60a3*Choix_Mode_Exe{string} 71|485r32
+61a3*Erreur_Mode{string} 71|504r35 539r35 574r35
+62a3*Quel_Mode_Aff{string} 71|519r32
+63a3*Choix_Mode_Aff{string} 71|521r32
+64a3*Quel_Mode_Reb{string} 71|554r32
+65a3*Choix_Mode_Reb{string} 71|556r32
+71a3*Quel_No_Loco{string} 71|854r61
+72a3*Quel_No_Loco2{string} 71|855r56
+73a3*Ind_Loco_Posee{string} 71|867r55
+74a3*Et{string} 71|869r55
+75a3*Ind_Continue{string} 71|889r56
+76a3*Quel_Vitesse_Loco{string} 71|895r60
+77a3*Erreur_Pos_Loco{string} 71|926r29
+78a3*Erreur_Pos_Loco2{string} 71|928r29
+79a3*Erreur_Pos_Loco3{string} 71|930r29
+X 36 p_section.ads
+36K9*P_Section 2488e14 71|56w6 648r11 654r16 657r16
+120E14*T_Direction 120e48 71|648r21
+120n30*Devie{120E14} 71|654r26
+120n37*Tout_Droit{120E14} 71|657r26
+X 37 p_train.ads
+62K9*P_Train 370e12 71|57w6 352r47 353r20 357r21 357r42 702r36 796r36 875r38
+. 879r24 918r41 922r27
+94I11*T_Train_Id{natural} 71|352r55 357r29 357r50 875r46 879r32 922r35
+98I11*T_Vitesse{natural} 71|796r44
+107i3*Arret{98I11} 71|702r44
+110i3*Train_Null{94I11} 71|353r28 918r49
+X 68 text_io.ads
+24K9*Text_IO=24:29 71|66w6
+X 69 train_handler.ads
+52K9*Train_Handler 349e18 70|48r9 85r43 86r43 87r44 88r44 252r5 71|69r14
+. 192r16 197r16 199r16 201r16 205r16 209r16 211r16 215r16 943r5
+58i3*Vitesse_Minimum{integer} 71|897r46
+61i3*Vitesse_Maximum{integer} 71|899r46
+74E8*T_Direction 74e42 70|150r25 71|645r52
+74n24*Devie{74E8} 71|652r21
+78I11*No_Aiguillage_Type{integer} 70|149r25 71|644r52
+81I11*No_Contact_Type{integer} 70|85r57 86r57 164r45 71|679r45 828r21 829r21
+84I11*No_Loco_Type{integer} 70|87r58 176r19 197r26 219r19 234r44 248r45 71|352r30
+. 698r38 726r60 754r48 772r44 791r45 830r22 836r20 856r46 858r46
+87I11*Vitesse_Type{integer} 70|88r58 198r26 249r45 71|727r60 792r45 831r22
+. 837r21
+304n6 Null_Id{303E8} 71|189r18 230r58
+305n6 Diriger_Aiguillage_Id{303E8} 71|191r18
+306n6 Attendre_Contact_Id{303E8} 71|196r18
+307n6 Arreter_Loco_Id{303E8} 71|198r18
+308n6 Mettre_Vitesse_Progressive_Id{303E8} 71|200r18
+309n6 Mettre_Fonction_Loco_Id{303E8} 71|204r18
+310n6 Inverser_Sens_Loco_Id{303E8} 71|208r18
+311n6 Mettre_Vitesse_Loco_Id{303E8} 71|210r18
+312n6 Demander_Loco_Id{303E8} 71|214r18
+314R8 Arguments_Record_Type 343e13 71|74r32 113r19 146r20 176r13 228r20 230r26
+. 264r23 275r31 298r25 310r32
+314e31*Id{303E8} 71|188r19 230r52
+319i10*No_Aiguillage{78I11} 71|193r40
+320e10*Direction{74E8} 71|194r40
+321i10*Temps_Alim{natural} 71|195r40
+323i10*No_Contact{81I11} 71|197r59
+325i10*No_Loco_A{84I11} 71|199r55
+327i10*No_Loco_B{84I11} 71|202r41
+328i10*Vitesse_Future{87I11} 71|203r41
+330i10*No_Loco_C{84I11} 71|206r34
+331b10*Etat{boolean} 71|207r34
+333i10*No_Loco_D{84I11} 71|209r61
+335i10*No_Loco_E{84I11} 71|212r34
+336i10*Vitesse_A{87I11} 71|213r34
+338i10*Contact_A{81I11} 71|216r36
+339i10*Contact_B{81I11} 71|217r36
+340i10*Numero{84I11} 71|218m36
+341i10*Vitesse_B{87I11} 71|219m36
+345M8 Seq_Type 71|75r32 112r19 145r20 175r13 229r17 263r23 274r31 276r18
+. 297r25 309r32
+X 70 train_handler-server.ads
+48K23*Server 69|52k9 70|252l19 252e25 71|69b28 192r30 197r30 199r30 201r30
+. 205r30 209r30 211r30 215r30 943l19 943t25
+85U13*Demander_Loco 85>28 86>28 87<28 88<28 71|215r37 827b13 941l7 941t20
+85i28 Contact_A{69|81I11} 71|216r19 828b6 868r46 884r45
+86i28 Contact_B{69|81I11} 71|217r19 829b6 870r46 885r45
+87i28 Numero{69|84I11} 71|218r19 830b6 909m6 938m9
+88i28 Vitesse{69|87I11} 71|219r19 831b6 910m6 939m9
+99U13*Init_Maquette 71|412b13 589l7 589t20
+108U13*Mettre_Maquette_Hors_Service 71|598b13 604l7 604t35
+119U13*Mettre_Maquette_En_Service 71|389r7 614b13 619l7 619t33
+148U13*Diriger_Aiguillage 149>6 150>6 151>6 71|192r37 644b13 665l7 665t25
+149i6 No_Aiguillage{69|78I11} 71|193r19 644b32 663r38
+150e6 Direction{69|74E8} 71|194r19 645b32 652r9
+151i6 Temps_Alim{natural} 71|195r19 646b32
+164U13*Attendre_Contact 164>30 71|197r37 679b13 685l7 685t23
+164i30 No_Contact{69|81I11} 71|679b30 683r66
+175U13*Arreter_Loco 176>6 71|199r37 698b13 704l7 704t19
+176i6 No_Loco{69|84I11} 71|698b26 701r53
+196U13*Mettre_Vitesse_Progressive 197>6 198>6 71|201r37 726b13 732l7 732t33
+197i6 No_Loco{69|84I11} 71|202r19 726b41 730r26
+198i6 Vitesse_Future{69|87I11} 71|203r19 727b41 730r35
+218U13*Mettre_Fonction_Loco 219>6 220>6 71|205r37 754b13 758l7 758t27
+219i6 No_Loco{69|84I11} 71|206r19 754b35
+220b6 Etat{boolean} 71|207r19 755b35
+234U13*Inverser_Sens_Loco 234>32 71|209r37 772b13 777l7 777t25
+234i32 No_Loco{69|84I11} 71|772b32 775r56
+248U13*Mettre_Vitesse_Loco 248>33 249>33 71|211r37 730r6 791b13 798l7 798t26
+248i33 No_Loco{69|84I11} 71|212r19 791b33 795r53
+249i33 Vitesse{69|87I11} 71|213r19 792b33 796r54
+X 71 train_handler-server.adb
+73K12 Network_Object[72|60] 78r25 82r17 249r7 299r16 311r13 419r6 420r6
+78r4 Connection{72|62R10[73]} 85m50 419m40 420m37
+81P9 Tcpip_Configuration_Type_Access(72|62R10[73]) 85r15 107r30 139r35 240r46
+. 291r30
+85p4 Conn_Acc{81P9} 249r31 299r37 311r34 424r28 425r24
+88T9 Executor_Type 89r39 255r30
+89P9 Executor_Access(88T9) 232r24
+91T9 Dispatcher_Type 92r41 154r35 318r46
+92P9 Dispatcher_Access(91T9) 108r30 141r35 154r52 167r43 172r24 180r43 234r24
+. 242r46 292r30 318r21
+101T14 Sender_Type 117l8 117e19 119r37 123r35 287b14 314l8 314t19 319r46
+106Y13 Start 107>10 108>10 290b14 425r17
+107p10 Conn_Acc{81P9}
+108p10 Dispatcher_Acc{92P9}
+111Y13 Send 112>10 113>10 221r21 296b20 300l17 300t21 308r13 309b17 312l14
+. 312t18
+112m10 Seq{69|345M8} 299r51 311r48
+113r10 Z{69|314R8} 299r56 311r53
+115Y13 Stop 282r16 302b20
+119P9 Sender_Access(101T14) 123r48 140r35 166r43 173r24 179r43 233r24 241r46
+. 319r21
+122U14 Free[74|20]
+133T14 Dispatcher_Type 150l8 150e23 226b14 284l8 284t23
+138Y13 Start 139>10 140>10 141>10 240b14 245l11 245t16 424r21
+139p10 Conn_Acc{81P9}
+140p10 Sender_Acc_Init{119P9} 244r24
+141p10 Dispatcher_Acc_Init{92P9} 243r28
+144Y13 Wait 145<10 146<10 186r25 253r10 262b17 267l14 267t18 274b15 278l12
+. 278t16
+145m10 Seq{69|345M8} 265m13 276m11
+146r10 Rec{69|314R8} 266m13 277m11
+148Y13 Stop 260b17
+153U14 Free[74|20]
+165T14 Executor_Type 168l8 168e21 170b14 223l8 223t21
+166Y13 start 166>21 167>21 179b14 183l11 183t16 256r23
+166p21 Sender_Acc_Init{119P9} 181r24
+167p21 Dispatcher_Acc_Init{92P9} 182r28
+172p7 Dispatcher_Acc{92P9} 182m10 186r10
+173p7 Sender_Acc{119P9} 181m10 221r10
+175m7 Seq{69|345M8} 186m31 221r27
+176r7 Rec{69|314R8} 186m36 188r15 193r36 194r36 195r36 197r55 199r51 202r37
+. 203r37 206r30 207r30 209r57 212r30 213r30 216r32 217r32 218m32 219m32 221r32
+179p21 Sender_Acc_Init{119P9}
+180p21 Dispatcher_Acc_Init{92P9}
+228r7 Args{69|314R8} 249m53 251r17 266r20
+229m7 My_Seq{69|345M8} 249m45 265r20
+230r7 End_Rec{69|314R8} 251r24 277r18
+232p7 Executor_Acc{89P9} 255m10 256r10
+233p7 Sender_Acc{119P9} 244m10 256r30 282r5
+234p7 Dispatcher_Acc{92P9} 243m10 256r42
+236i7 Executor_Counter{natural} 254m10 254r30 273r11 279m8 279r28
+240p21 Conn_Acc{81P9}
+241p21 Sender_Acc_Init{119P9}
+242p21 Dispatcher_Acc_Init{92P9}
+263m13 Seq{69|345M8}
+264r13 Rec{69|314R8}
+274m21 Seq{69|345M8}
+275r21 Rec{69|314R8}
+291p10 Conn_Acc{81P9}
+292p10 Dispatcher_Acc{92P9}
+297m16 Seq{69|345M8}
+298r16 Z{69|314R8}
+309m23 Seq{69|345M8}
+310r23 Z{69|314R8}
+318p4 Dispatcher_Acc{92P9} 424r6 424r50 425r34
+319p4 Sender_Acc{119P9} 424r38 425r6
+323E9 T_Type_Maquette 323e44 330r53 345r35 364r19
+323n29 a1{323E9} 364r38
+323n33 b1{323E9}
+323n37 a2{323E9}
+323n41 b2{323E9}
+327K12 P_Afficher_Entier[29|121] 856r6 858r6 862r6 868r6 870r6 897r6 899r6
+. 903r6
+330K12 Type_io[29|291] 455r15
+334K12 Mode_Aff_Io[29|291] 527r15
+336K12 Mode_Reb_Io[29|291] 562r15
+340K12 Mode_Execution_io[29|291] 491r15
+345a4 Nom_Maquette(string) 587r23
+352a4 Train_Id_De_Loco(37|94I11) 701r36 775r39 795r36 875m6 883r45 918m9
+357i4 Train_Id_preced{37|94I11} 875r62 879m6 879r48 922m9 922r51
+360e4 Last_Color{33|52E8} 842r9 844m9 847m9 847r38 886r45
+364e4 Type_Maquette{323E9} 455m27 587r36
+366e4 Reponse{character} 451m34 488m34 524m34 559m34
+367b4 A_la_ligne{boolean} 451m43 453r19 488m43 490r19 524m43 526r19 559m43
+. 561r19
+378t9 Interface_Graphique_Task 383b14 400l8 400t32 416r6
+379Y13 start 385b14 416r31
+648e6 Dir{36|120E14} 654m9 657m9 663r54
+836i6 Numero_Temp{69|84I11} 862m29 875r23 882r45 883r62 909r17 918r26
+837i6 Vitesse_Temp{69|87I11} 903m28 910r17
+X 72 tunnel.ads
+40K9*Tunnel 71|63w6 73r34 72|138e11
+50+10 Packed_Arguments_Type 71|74r7
+53+10 Sequence_Type 71|75r7
+60k11*Protocol 71|73r41 72|136e15
+62R10*Tcpip_Configuration_Type 71|78r40[73] 82r32[73]
+72K13*Server 71|419r21[73] 420r21[73]
+74U17*Initialize 71|419r28[73]
+75U17*Connect 71|420r28[73]
+99U15*Send 71|299r31[73] 311r28[73]
+106U15*Receive 71|249r22[73]
+X 74 unchdeal.ads
+20u11*Unchecked_Deallocation 71|64w6 123r11 154r11
+

@@ -1,0 +1,55 @@
+V "GNAT Lib v4.3"
+A -O0
+A -g
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U p_couleur%b		p_couleur.adb		007a9b87 NE PK
+
+U p_couleur%s		p_couleur.ads		aafee82b EE NE PK
+W gl%s			gl.ads			gl.ali
+
+D ada.ads		20070406091342 9c7dd3ea
+D a-unccon.ads		20070406091342 51e09df2
+D gl.ads		20090205120411 c226b9d6
+D interfac.ads		20051209172227 a69cad5c
+D i-c.ads		20070406091342 bc3ef662
+D p_couleur.ads		20090205120411 68d851fd
+D p_couleur.adb		20090205120411 68a2ca7a
+D system.ads		20090825132454 e2b32c27
+D s-exctab.ads		20070912115821 5c1c61ae
+D s-parame.ads		20070814084525 f32e56e9
+D s-stalib.ads		20070912115821 9ac44ca2
+D s-unstyp.ads		20070912115821 c0f9fae5
+X 3 gl.ads
+38K9*GL 4184e7 6|40w6 40r14
+99F6*GLfloat<5|64F9> 6|60r49
+X 5 i-c.ads
+64F9*C_float<float>
+X 6 p_couleur.ads
+42K9*P_Couleur 82l5 82e14 7|39b14 98l5 98t14
+52E8*T_Couleur 55e79 79r34 7|50r33 89r33
+52n23*Bleu_Contact{52E8}
+52n37*Couleur_Segment_Inactif{52E8}
+53n23*Couleur_Segment_Actif{52E8}
+53n46*Couleur_Risque_Deraillement{52E8}
+54n23*Blanc{52E8}
+54n30*Noir{52E8}
+54n36*Rouge{52E8}
+54n43*Vert{52E8}
+54n49*Bleu{52E8}
+54n55*Cyan{52E8}
+54n61*Jaune{52E8}
+55n23*Magenta{52E8}
+55n32*Rouge_Loco{52E8}
+55n44*Orange_Loco{52E8}
+55n57*Vert_Loco{52E8}
+55n68*Bleu_Loco{52E8}
+60A8*T_Couleur_Rvba(3|99F6)<integer> 80r13 7|50r47 90r12
+79V13*Transforme{60A8} 79>25 7|89b12 96l7 96t17
+79e25 Couleur{52E8} 7|89b24 94r26
+X 7 p_couleur.adb
+50A8 T_Table_Couleur(6|60A8)<6|52E8> 59r26
+59a3 Tablecouleur{50A8} 94r13
+

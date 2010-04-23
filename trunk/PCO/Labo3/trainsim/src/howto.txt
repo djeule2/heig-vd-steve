@@ -1,0 +1,10 @@
+BUILD
+
+You need gnat to compile this program :
+gnatmake -Ptrainsim
+
+EXECUTE
+
+You have to launche this program from auxfiles dir :
+cd auxfiles/
+../bin/trainsim

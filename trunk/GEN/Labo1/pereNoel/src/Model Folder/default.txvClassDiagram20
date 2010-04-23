@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhg6ak9yc2o2xu75">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:PanneauGraphique">
+			<property name="bounds" value="305,15,186,242"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:PanneauGraphique:a_lePereNoel">
+				<property name="sourceAnchor" value="326,262"/>
+				<property name="targetAnchor" value="184,424"/>
+				<reference referencedUin="label:label:jdt:l_ast:src:PanneauGraphique:a_lePereNoel">
+					<property name="bounds" value="266,334,21,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:PanneauGraphique:a_coucheNeige">
+				<property name="sourceAnchor" value="343,262"/>
+				<property name="targetAnchor" value="343,462"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:PanneauGraphique:Parametres">
+				<property name="sourceAnchor" value="486,262"/>
+				<property name="targetAnchor" value="487,476"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:PanneauGraphique:a_chuteNeige">
+				<property name="sourceAnchor" value="496,141"/>
+				<property name="targetAnchor" value="596,141"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Noel">
+			<property name="bounds" value="5,30,200,212"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Noel:lePereNoel">
+				<property name="sourceAnchor" value="111,247"/>
+				<property name="targetAnchor" value="111,424"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Noel:chuteDeNeige">
+				<property name="sourceAnchor" value="210,75"/>
+				<property name="targetAnchor" value="596,74"/>
+				<property name="bendpoints" value="299,10,507,10"/>
+				<property name="smooth_bendpoints" value="299,10,507,10"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Noel:panneauGraphique">
+				<property name="sourceAnchor" value="210,161"/>
+				<property name="targetAnchor" value="310,161"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Noel:coucheDeNeige">
+				<property name="sourceAnchor" value="177,247"/>
+				<property name="targetAnchor" value="309,462"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Flocon">
+			<property name="bounds" value="678,374,113,303"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:Flocon:Parametres">
+				<property name="sourceAnchor" value="683,530"/>
+				<property name="targetAnchor" value="603,530"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:ChuteNeige">
+			<property name="bounds" value="591,30,199,212"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:ChuteNeige:flocons">
+				<property name="sourceAnchor" value="739,247"/>
+				<property name="targetAnchor" value="739,379"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:ChuteNeige:flocons">
+					<property name="bounds" value="742,350,21,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:ChuteNeige:Parametres">
+				<property name="sourceAnchor" value="667,247"/>
+				<property name="targetAnchor" value="545,476"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:CoucheNeige">
+			<property name="bounds" value="270,457,102,137"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:CoucheNeige:Parametres">
+				<property name="sourceAnchor" value="377,520"/>
+				<property name="targetAnchor" value="477,520"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:PereNoel">
+			<property name="bounds" value="73,419,147,212"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:PereNoel:lnkNoel">
+				<property name="sourceAnchor" value="144,424"/>
+				<property name="targetAnchor" value="144,247"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:PereNoel:lnkNoel">
+					<property name="bounds" value="147,248,22,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:PereNoel:Parametres">
+				<property name="sourceAnchor" value="225,614"/>
+				<property name="targetAnchor" value="477,564"/>
+				<property name="bendpoints" value="378,614"/>
+				<property name="smooth_bendpoints" value="378,614"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Parametres">
+			<property name="bounds" value="472,471,126,109"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

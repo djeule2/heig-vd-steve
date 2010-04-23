@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<?xml-stylesheet href="personne.xsl" type="text/xsl"?>
+<!DOCTYPE liste SYSTEM 'personne.dtd'>
+
+<liste>
+	<personne>
+		<nom>Joh</nom>
+		<prenom>LuiTi</prenom>
+		<email>joh.luiti@heig-vd.ch</email>
+		<telephone>
+			<fixe>
+				<indicatif>024</indicatif>
+				<numero>8224343</numero>
+			</fixe>
+			<mobile>
+				<indicatif>078</indicatif>
+				<numero>4453423</numero>
+			</mobile>
+		</telephone>	
+	</personne>
+	<personne>
+		<nom>Roger</nom>
+		<prenom>Federer</prenom>
+		<email>roger.federer@heig-vd.ch</email>
+		<telephone>
+			<fixe>
+				<indicatif>024</indicatif>
+				<numero>8536543</numero>
+			</fixe>
+			<mobile>
+				<indicatif>079</indicatif>
+				<numero>3465343</numero>
+			</mobile>
+		</telephone>				
+	</personne>
+</liste>

@@ -1,0 +1,9 @@
+4.1.3
+
+remarque : On constate que quand on supprime une commande, la clé étrangère existante dans une autre table n'est pas supprimée automatiquement
+	   => relation
+
+
+4.1.4
+
+Ordre : Client, commande, produit, ligne de commande

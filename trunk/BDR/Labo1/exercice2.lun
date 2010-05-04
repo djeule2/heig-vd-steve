@@ -1,0 +1,2370 @@
+DBLUN8
+*SYSTEM
+object_id double
+flag int
+name char[100]
+short_name char[12]
+creation_date char[10]
+semantics_desc text
+technical_desc text
+sys_mo rel
+sys_sch rel
+link rel
+user_viewable rel
+viewable_note rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*META_OBJECT
+object_id double
+flag int
+name char[100]
+type short
+semantics_desc text
+mo_mp rel
+concept_mo rel
+*META_PROPERTY
+object_id double
+flag int
+name char[100]
+type short
+funct int
+semantics_desc text
+*SCHEMA
+object_id double
+flag int
+name char[100]
+short_name char[12]
+version char[16]
+creation_date char[10]
+last_update char[10]
+lock char
+type char
+semantics_desc text
+technical_desc text
+trace_on int
+from rel
+to rel
+is_in rel
+sch_do rel
+sch_col rel
+sch_inst rel
+owner_pu rel
+user_viewable rel
+viewable_note rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*ENTITY_TYPE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+owner_att rel
+owner_group rel
+col_do2 rel
+owner_pu rel
+et_role1 rel
+decomp rel
+general rel
+domain rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*REL_TYPE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+owner_att rel
+owner_group rel
+col_do2 rel
+owner_pu rel
+rt_type rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*CO_ATTRIBUTE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+min_rep unsigned int
+max_rep unsigned int
+set_type char
+owner_att rel
+owner_group rel
+col_do2 rel
+domain rel
+at_ro_gr
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*SI_ATTRIBUTE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+min_rep unsigned int
+max_rep unsigned int
+set_type char
+stable char
+recyclable char
+type char
+length unsigned int
+decim short
+owner_group rel
+col_do2 rel
+domain rel
+at_ro_gr
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*ROLE
+object_id double
+flag int
+name char[100]
+min_con unsigned int
+max_con unsigned int
+aggregation char
+semantics_desc text
+technical_desc text
+at_ro_gr
+et_role2 rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*ET_ROLE
+object_id double
+flag int
+*GROUP
+object_id double
+flag int
+name char[100]
+type char
+funct int
+min_rep unsigned int
+max_rep unsigned int
+semantics_desc text
+technical_desc text
+at_ro_gr
+gr_comp rel
+member_gr rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*COMPONENT
+object_id double
+flag int
+*MEMBER_CST
+object_id double
+flag int
+mem_role char
+*CONSTRAINT
+object_id double
+flag int
+type char
+mbr_cst rel
+go_uo rel
+*COLLECTION
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+col_do1 rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*COL_DO
+object_id double
+flag int
+*CLUSTER
+object_id double
+flag int
+cluster_id char[100]
+type int
+criterion char[30]
+special rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*SUB_TYPE
+object_id double
+flag int
+value char[30]
+go_uo rel
+*USER_VIEW
+object_id double
+flag int
+name char[100]
+type int
+zoom int
+reduce int
+xgrid int
+ygrid int
+font_size int
+font_name char[30]
+text_font_size int
+text_font_name char[30]
+markplan int
+uv_uo rel
+*USER_OBJECT
+object_id double
+flag int
+posx int
+posy int
+color int
+*CONNECTION
+object_id double
+flag int
+type char[10]
+seq_nbr int
+*TEXT
+object_id double
+flag int
+name char[100]
+version char[16]
+path char[260]
+creation_date char[10]
+last_update char[10]
+type_of_file char[10]
+num_line int
+lock char
+sem_desc text
+tech_desc text
+from rel
+to rel
+is_in rel
+text_inst rel
+line rel
+user_viewable rel
+viewable_note rel
+go_uo rel
+go_st rel
+act_arg rel
+go_nn_note rel
+*LINE
+object_id double
+flag int
+num int
+description text
+go_uo rel
+*PROD_SET
+object_id double
+flag int
+name char[100]
+version char[16]
+creation_date char[10]
+last_update char[10]
+lock char
+sem_desc text
+tech_desc text
+from rel
+to rel
+is_in rel
+contains rel
+set_inst rel
+go_uo rel
+*PROD_SET_ELEM
+object_id double
+flag int
+*PROC_UNIT
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+type char
+mode char
+owner_group rel
+col_do2 rel
+p_decl rel
+p_fct_call rel
+invokes_pu rel
+pu_made_of rel
+cons_pu rel
+go_st rel
+act_arg rel
+go_nn_note rel
+go_uo rel
+*ENVIRONMENT
+object_id double
+flag int
+name char[100]
+type char
+mode char
+semantics_desc text
+technical_desc text
+go_nn_note rel
+go_uo rel
+*STATE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+owner_group rel
+col_do2 rel
+st_env rel
+go_nn_note rel
+go_uo rel
+*ELEMENT
+object_id double
+flag int
+type char
+description text
+p_made_of rel
+p_part_of rel
+go_nn_note rel
+go_uo rel
+*REL_ELEMENT
+object_id double
+flag int
+name char[100]
+type char
+mode char
+semantics_desc text
+technical_desc text
+go_nn_note rel
+go_uo rel
+*P_EXPRESSION
+object_id double
+flag int
+oper int
+constant char[255]
+description text
+sub_expression rel
+go_uo rel
+*CONSUMPTION
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+owner_group rel
+col_do2 rel
+cons_res rel
+cons_role rel
+cons_pu rel
+go_st rel
+act_arg rel
+go_nn_note rel
+go_uo rel
+*CONS_PU
+object_id double
+flag int
+name char[100]
+min_card int
+max_card int
+semantics_desc text
+technical_desc text
+go_nn_note rel
+go_uo rel
+*CONS_RES
+object_id double
+flag int
+name char[100]
+min_card int
+max_card int
+semantics_desc text
+technical_desc text
+go_nn_note rel
+go_uo rel
+*CONS_ROLE
+object_id double
+flag int
+name char[100]
+min_card int
+max_card int
+semantics_desc text
+technical_desc text
+go_nn_note rel
+go_uo rel
+*RESOURCE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+type char
+owner_group rel
+col_do2 rel
+cons_res rel
+cp_res rel
+re_gen rel
+re_spec rel
+go_st rel
+act_arg rel
+go_nn_note rel
+go_uo rel
+*RES_ROLE
+object_id double
+flag int
+name char[100]
+short_name char[12]
+semantics_desc text
+technical_desc text
+owner_group rel
+col_do2 rel
+cons_role rel
+cp_rol rel
+ro_gen rel
+ro_spec rel
+go_st rel
+act_arg rel
+go_nn_note rel
+go_uo rel
+*RE_ISA
+object_id double
+flag int
+name char[100]
+semantics_desc text
+technical_desc text
+go_nn_note rel
+go_uo rel
+*RO_ISA
+object_id double
+flag int
+name char[100]
+semantics_desc text
+technical_desc text
+go_nn_note rel
+go_uo rel
+*CAN_PLAY
+object_id double
+flag int
+go_nn_note rel
+go_uo rel
+*DYNAMIC_PROPERTY
+mp_id double
+object_id double
+value text
+*METHODOLOGY
+object_id double
+title char[100]
+version char[16]
+date char[10]
+author char[100]
+help_file char[255]
+semantics_desc text
+user_viewable rel
+viewable_note rel
+*STATEMENT
+object_id double
+type int
+state char
+glbtrsf trsfscr
+sub_stmt rel
+strategy rel
+condition rel
+stmt_param rel
+pp_inst rel
+ep_inst rel
+cs_inst rel
+*EXPRESSION
+object_id double
+type int
+not char
+weak char
+sub_expression rel
+cond_dec rel
+expr_param rel
+*PARAMETER
+object_id double
+integer int
+string char[255]
+analysis_expr anallist
+type char
+mode char
+usage char
+*PROCESS_TYPE
+object_id double
+name char[100]
+title char[100]
+explain char[100]
+semantics_desc text
+perform rel
+form_arg rel
+invokes rel
+*TOOLBOX
+object_id double
+name char[100]
+title char[100]
+functions list_int
+semantics_desc text
+uses rel
+*TEXT_TYPE
+object_id double
+name char[100]
+title char[100]
+weak char
+min_mul int
+max_mul int
+usage char
+semantics_desc text
+act_arg rel
+ttext_inst rel
+*SCHEMA_TYPE
+object_id double
+name char[100]
+title char[100]
+weak char
+min_mul int
+max_mul int
+usage char
+semantics_desc text
+act_arg rel
+tschema_inst rel
+*PROD_SET_TYPE
+object_id double
+name char[100]
+title char[100]
+min_mul int
+max_mul int
+usage char
+semantics_desc text
+actarg rel
+tset_inst rel
+*TEXT_MODEL
+object_id double
+name char[100]
+title char[100]
+semantics_desc text
+default_ext list_char[3]
+grammar char[255]
+model_expr rel
+specialization rel
+text_conform rel
+*SCHEMA_MODEL
+object_id double
+name char[100]
+title char[100]
+semantics_desc text
+constraints anallist
+model_expr rel
+specialization rel
+schema_conform rel
+have_concept rel
+*MOD_CONCEPT
+object_id double
+contextual_name char[100]
+funct1 unsigned int
+funct2 unsigned int
+*ENGINEERING_PROCESS
+object_id double
+name char[100]
+start_date char[10]
+start_time char[10]
+end_date char[10]
+end_time char[10]
+in_progress char
+semantics_desc text
+flag int
+io_proc rel
+made_of rel
+start rel
+user_viewable rel
+viewable_note rel
+go_uo rel
+go_nn_note rel
+*DECISION
+object_id double
+name char[100]
+start_date char[10]
+start_time char[10]
+end_date char[10]
+end_time char[10]
+in_progress char
+yes_no char
+semantics_desc text
+flag int
+io_proc rel
+go_uo rel
+go_nn_note rel
+*PRIMITIVE_PROCESS
+object_id double
+name char[100]
+start_date char[10]
+start_time char[10]
+end_date char[10]
+end_time char[10]
+in_progress char
+semantics_desc text
+flag int
+io_proc rel
+go_uo rel
+go_nn_note rel
+*CONTROL_STRUCTURE
+object_id double
+name char[100]
+start_date char[10]
+start_time char[10]
+end_date char[10]
+end_time char[10]
+in_progress char
+golist list_int
+semantics_desc text
+io_proc rel
+*SCHEMA_INSTANCE
+object_id double
+usage char
+checkpoint char[100]
+flag int
+go_nn_note rel
+*TEXT_INSTANCE
+object_id double
+usage char
+checkpoint char[100]
+flag int
+go_nn_note rel
+*PROD_SET_INSTANCE
+object_id double
+usage char
+checkpoint char[100]
+flag int
+go_nn_note rel
+*NOTE
+object_id double
+flag int
+description text
+note_nn_note rel
+go_uo rel
+*NN_NOTE
+object_id double
+flag int
+*DESCRIPTIONS
+schema double
+length long
+text FILE
+*LOG
+schema double
+length long
+text FILE
+*
+*0
+0
+0
+exercice2
+
+20100218
+0
+0
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+-
+56
+-
+48
+-
+1
+-
+-
+-
+-
+-
+-
+*1
+21
+0
+In-out
+43
+0
+40
+-
+-
+*1
+20
+0
+State
+61
+0
+46
+-
+-
+*1
+19
+0
+Actor generalization
+62
+0
+42
+-
+-
+*1
+18
+0
+Actor
+48
+0
+41
+-
+-
+*1
+17
+0
+Actor association role
+66
+0
+45
+-
+-
+*1
+16
+0
+Use case association role
+68
+0
+44
+-
+-
+*1
+15
+0
+Association
+47
+0
+43
+-
+-
+*1
+14
+0
+Processing unit relation
+45
+0
+47
+-
+-
+*1
+13
+0
+Processing unit
+40
+0
+39
+38
+-
+-
+*1
+12
+0
+Collection
+4
+0
+35
+34
+-
+-
+*1
+11
+0
+Role
+14
+0
+27
+26
+-
+-
+*1
+10
+0
+Group
+16
+0
+37
+36
+-
+-
+*1
+9
+0
+Compound attribute
+6
+0
+33
+32
+-
+-
+*1
+8
+0
+Atomic attribute
+7
+0
+31
+30
+29
+28
+-
+-
+*1
+7
+0
+Rel-type
+12
+0
+25
+24
+-
+-
+*1
+6
+0
+Entity type
+11
+0
+23
+22
+-
+-
+*1
+5
+0
+Product set
+41
+0
+-
+-
+*1
+4
+0
+Text
+31
+0
+-
+-
+*1
+3
+0
+Schema
+2
+0
+-
+-
+*1
+2
+0
+Project
+1
+0
+-
+-
+*2
+47
+0
+Stereotype
+86
+14
+0
+*2
+46
+0
+Stereotype
+86
+14
+1
+*2
+45
+0
+Stereotype
+86
+14
+0
+*2
+44
+0
+Stereotype
+86
+14
+0
+*2
+43
+0
+Stereotype
+86
+14
+0
+*2
+42
+0
+Stereotype
+86
+14
+0
+*2
+41
+0
+Stereotype
+86
+14
+0
+*2
+40
+0
+Stereotype
+86
+14
+0
+*2
+39
+0
+MappingOID
+78
+10
+0
+*2
+38
+0
+Stereotype
+86
+14
+0
+*2
+37
+0
+MappingOID
+78
+10
+0
+*2
+36
+0
+User-constraint
+86
+1
+0
+*2
+35
+0
+MappingOID
+78
+10
+0
+*2
+34
+0
+Stereotype
+86
+14
+0
+*2
+33
+0
+MappingOID
+78
+10
+0
+*2
+32
+0
+Stereotype
+86
+14
+0
+*2
+31
+0
+Default value
+86
+2
+0
+*2
+30
+0
+MappingOID
+78
+10
+0
+*2
+29
+0
+Stereotype
+86
+14
+0
+*2
+28
+0
+Value constraint
+86
+10
+0
+*2
+27
+0
+MappingOID
+78
+10
+0
+*2
+26
+0
+Stereotype
+86
+14
+0
+*2
+25
+0
+MappingOID
+78
+10
+0
+*2
+24
+0
+Stereotype
+86
+14
+0
+*2
+23
+0
+MappingOID
+78
+10
+0
+*2
+22
+0
+Stereotype
+86
+14
+0
+*3
+56
+256
+exo2
+
+1
+20100218
+20100218
+F
+E
+0
+0
+0
+-
+-
+-
+64
+66
+84
+74
+90
+92
+100
+96
+106
+104
+88
+82
+80
+78
+76
+68
+108
+116
+139
+179
+-
+-
+57
+59
+62
+-
+-
+58
+-
+-
+63
+177
+-
+-
+-
+-
+*4
+92
+0
+EDITION
+
+0
+0
+104
+106
+100
+96
+179
+-
+136
+-
+-
+-
+120
+-
+-
+-
+-
+93
+-
+-
+-
+-
+*4
+84
+0
+LIBRAIRE
+
+0
+0
+88
+90
+-
+133
+-
+-
+-
+143
+-
+-
+-
+-
+85
+-
+-
+-
+-
+*4
+66
+0
+AUTEURS
+
+0
+0
+68
+80
+82
+-
+127
+130
+-
+-
+-
+110
+-
+-
+-
+-
+67
+-
+-
+-
+-
+*4
+64
+0
+LIVRES
+
+0
+0
+74
+76
+78
+-
+124
+-
+-
+-
+141
+118
+112
+-
+-
+-
+-
+65
+-
+-
+-
+-
+*5
+139
+0
+commande
+
+0
+0
+-
+-
+-
+-
+140
+142
+-
+144
+-
+-
+-
+-
+*5
+116
+0
+est tiré en
+
+0
+0
+-
+-
+-
+-
+117
+119
+-
+121
+-
+-
+-
+-
+*5
+108
+0
+est écrit par
+
+0
+0
+-
+-
+-
+-
+109
+111
+-
+113
+-
+-
+-
+-
+*7
+179
+0
+prix
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+180
+-
+-
+-
+-
+*7
+106
+0
+ordre
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+107
+-
+-
+-
+-
+*7
+104
+0
+nom
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+137
+-
+105
+-
+-
+-
+-
+*6
+100
+0
+date
+
+0
+0
+1
+1
+ 
+-
+-
+-
+-
+-
+101
+-
+-
+-
+-
+*7
+96
+0
+nbExemplaire
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+97
+-
+-
+-
+-
+*7
+90
+0
+adresse
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+91
+-
+-
+-
+-
+*7
+88
+0
+nom
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+134
+-
+89
+-
+-
+-
+-
+*7
+82
+0
+pseudo
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+83
+-
+-
+-
+-
+*7
+80
+0
+prénom
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+131
+-
+81
+-
+-
+-
+-
+*7
+78
+0
+prix
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+79
+-
+-
+-
+-
+*7
+76
+0
+titre
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+-
+77
+-
+-
+-
+-
+*7
+74
+0
+isbn
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+125
+-
+75
+-
+-
+-
+-
+*7
+68
+0
+nom
+
+0
+0
+1
+1
+ 
+F
+T
+A
+1
+0
+-
+-
+-
+128
+-
+69
+-
+-
+-
+-
+*8
+142
+0
+
+0
+N
+ 
+0
+0
+-
+143
+-
+146
+-
+-
+-
+-
+*8
+140
+0
+
+0
+N
+ 
+0
+0
+-
+141
+-
+145
+-
+-
+-
+-
+*8
+119
+0
+
+1
+1
+ 
+0
+0
+-
+120
+-
+123
+-
+-
+-
+-
+*8
+117
+0
+
+1
+1
+ 
+0
+0
+-
+118
+-
+122
+-
+-
+-
+-
+*8
+111
+0
+
+1
+N
+ 
+0
+0
+-
+112
+-
+115
+-
+-
+-
+-
+*8
+109
+0
+
+0
+N
+ 
+0
+0
+-
+110
+-
+114
+-
+-
+-
+-
+*9
+143
+0
+*9
+141
+0
+*9
+120
+0
+*9
+118
+0
+*9
+112
+0
+*9
+110
+0
+*10
+136
+0
+IDEDITION
+A
+1
+0
+N
+0
+0
+-
+137
+-
+-
+138
+-
+-
+-
+-
+*10
+133
+0
+IDLIBRAIRIE
+A
+1
+0
+N
+0
+0
+-
+134
+-
+-
+135
+-
+-
+-
+-
+*10
+130
+0
+IDAUTEURS_1
+A
+2
+0
+N
+0
+0
+-
+131
+-
+-
+132
+-
+-
+-
+-
+*10
+127
+0
+IDAUTEURS
+A
+1
+0
+N
+0
+0
+-
+128
+-
+-
+129
+-
+-
+-
+-
+*10
+124
+0
+IDLIVRES
+A
+1
+0
+N
+0
+0
+-
+125
+-
+-
+126
+-
+-
+-
+-
+*11
+137
+0
+*11
+134
+0
+*11
+131
+0
+*11
+128
+0
+*11
+125
+0
+*18
+58
+0
+
+23
+100
+100
+0
+0
+0
+
+0
+
+1
+63
+65
+67
+69
+75
+77
+79
+81
+83
+85
+89
+91
+93
+97
+101
+105
+107
+113
+114
+115
+121
+122
+123
+126
+129
+132
+135
+138
+144
+145
+146
+180
+-
+*18
+54
+0
+
+23
+100
+100
+0
+0
+0
+
+0
+
+1
+55
+177
+178
+-
+*18
+49
+0
+
+0
+100
+100
+0
+0
+0
+
+0
+
+1
+-
+*18
+1
+0
+
+23
+100
+100
+0
+0
+0
+
+0
+
+1
+-
+*19
+180
+0
+0
+0
+0
+*19
+178
+0
+30000
+14650
+0
+*19
+177
+0
+30000
+29650
+0
+*19
+146
+0
+125283
+96146
+0
+*19
+145
+0
+76468
+56433
+0
+*19
+144
+0
+100876
+76154
+0
+*19
+138
+0
+0
+0
+0
+*19
+135
+0
+0
+0
+0
+*19
+132
+0
+0
+0
+0
+*19
+129
+0
+0
+0
+0
+*19
+126
+0
+0
+0
+0
+*19
+123
+0
+48775
+90405
+0
+*19
+122
+0
+48725
+62108
+0
+*19
+121
+0
+48750
+76255
+0
+*19
+115
+0
+81125
+34222
+0
+*19
+114
+0
+158575
+34754
+0
+*19
+113
+0
+119850
+34488
+0
+*19
+107
+0
+0
+0
+0
+*19
+105
+0
+0
+0
+0
+*19
+101
+0
+0
+0
+0
+*19
+97
+0
+0
+0
+0
+*19
+93
+0
+48800
+123400
+0
+*19
+91
+0
+0
+0
+0
+*19
+89
+0
+0
+0
+0
+*19
+85
+0
+156600
+121800
+0
+*19
+83
+0
+0
+0
+0
+*19
+81
+0
+0
+0
+0
+*19
+79
+0
+0
+0
+0
+*19
+77
+0
+0
+0
+0
+*19
+75
+0
+0
+0
+0
+*19
+69
+0
+0
+0
+0
+*19
+67
+0
+194200
+35000
+0
+*19
+65
+0
+48700
+34000
+0
+*19
+63
+0
+29200
+11300
+0
+*19
+55
+0
+100000
+10000
+0
+*40
+37
+136
+136
+*40
+37
+133
+133
+*40
+37
+130
+130
+*40
+37
+127
+127
+*40
+37
+124
+124
+*40
+33
+100
+94
+*40
+30
+179
+179
+*40
+30
+106
+106
+*40
+30
+104
+104
+*40
+30
+96
+96
+*40
+30
+90
+90
+*40
+30
+88
+88
+*40
+30
+82
+82
+*40
+30
+80
+80
+*40
+30
+78
+78
+*40
+30
+76
+76
+*40
+30
+74
+74
+*40
+30
+68
+68
+*40
+25
+139
+139
+*40
+25
+116
+116
+*40
+25
+108
+108
+*40
+23
+92
+92
+*40
+23
+84
+84
+*40
+23
+66
+66
+*40
+23
+64
+64
+*41
+48
+
+
+20100218
+
+
+0
+49
+-
+-
+*42
+60
+18
+0
+-
+-
+-
+-
+-
+61
+-
+-
+-
+*42
+51
+13
+0
+-
+-
+52
+-
+-
+-
+-
+-
+-
+*45
+52
+No_method
+No method
+
+0
+48
+-
+-
+-
+*46
+50
+Everything
+Do whatever you want
+14001
+-
+0
+51
+-
+*53
+53
+exercice2
+20100218
+165014
+
+
+T
+0
+0
+57
+59
+-
+61
+-
+48
+-
+54
+-
+-
+55
+-
+-
+*55
+61
+New schema
+20100218
+165351
+20100218
+165351
+F
+0
+0
+62
+-
+178
+-
+-
+*57
+62
+o
+
+0
+-
+*57
+59
+n
+
+0
+-
+*57
+57
+C
+
+0
+-
+*62
+0
+108
+    #VALUES=
+ET
+RT
+Att
+Coll
+#                                                                          
+*62
+56
+4
+    
+*62
+48
+4
+    
+*63
+56
+19
+*POT "begin-file"
+

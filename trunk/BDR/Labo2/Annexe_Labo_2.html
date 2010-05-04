@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><title>Tables Access Labo 1</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head>
+
+<body>
+<p><b><font face="Arial, Helvetica, sans-serif">Table CLIENT</font></b></p>
+       
+<table width="610" border="1" bordercolor="#000000" cellpadding="1" cellspacing="0">
+         <col width="135"> <col width="130"> <col width="74"> <col width="262">          <tbody>
+    <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>ATTRIBUT</b></p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;"><b>TYPE</b></p>
+           </td>
+           <td width="74">              
+      <p style="margin-top: 0.02cm; margin-bottom: 0cm;"><b>NULL</b></p>
+             
+      <p style="margin-top: 0.02cm;"><b>(interdit)</b></p>
+           </td>
+           <td width="262">              
+      <p style="margin-top: 0.02cm;"><b>SIGNIFICATION</b></p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>NUMERO_CLI</b></p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">int (11)</p>
+           </td>
+           <td width="74">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="262">              
+      <p style="margin-top: 0.02cm;">Numéro d&#8217;identification     
+          du client</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">NOM_CLI</p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">varchar (20)</p>
+           </td>
+           <td width="74">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="262">              
+      <p style="margin-top: 0.02cm;">Nom du client</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">ADRESSE_CLI</p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">varchar (75)</p>
+           </td>
+           <td width="74">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="262">              
+      <p style="margin-top: 0.02cm;">Adresse du client (rue, NPA, ville)</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">TELEHONE_CLI</p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">varchar (20)</p>
+           </td>
+           <td width="74">              
+      <p style="margin-top: 0.02cm;">N</p>
+           </td>
+           <td width="262">              
+      <p style="margin-top: 0.02cm;">Numéro de téléphone
+               du client</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">PAYS_CLI</p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">varchar (20)</p>
+           </td>
+           <td width="74">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="262">              
+      <p style="margin-top: 0.02cm;">Pays du client</p>
+           </td>
+         </tr>
+       
+  </tbody>
+</table>
+       
+<div align="left">          
+<blockquote>            
+  <p>          </p>
+</blockquote>
+       </div>
+       
+<p><b><font face="Arial, Helvetica, sans-serif">Table COMMANDE</font></b></p>
+       
+<table width="610" border="1" bordercolor="#000000" cellpadding="1" cellspacing="0">
+         <col width="135"> <col width="131"> <col width="73"> <col width="261">          <tbody>
+    <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>ATTRIBUT</b></p>
+           </td>
+           <td width="131">              
+      <p style="margin-top: 0.02cm;"><b>TYPE</b></p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm; margin-bottom: 0cm;"><b>NULL</b></p>
+             
+      <p style="margin-top: 0.02cm;"><b>(interdit)</b></p>
+           </td>
+           <td width="261">              
+      <p style="margin-top: 0.02cm;"><b>SIGNIFICATION</b></p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>NUMERO_COM</b></p>
+           </td>
+           <td width="131">              
+      <p style="margin-top: 0.02cm;">int (11)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="261">              
+      <p style="margin-top: 0.02cm;">Numéro de la commande</p>
+           </td>
+         </tr>
+         <tr>
+            <td width="135" valign="bottom">              
+      <p>DATE_COM</p>
+           </td>
+           <td width="131" valign="top">              
+      <p style="margin-top: 0.02cm;">date </p>
+           </td>
+           <td width="73" valign="top">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="261" valign="top">              
+      <p style="margin-top: 0.02cm;">Date de la commande</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">ETAT_COM</p>
+           </td>
+           <td width="131">              
+      <p style="margin-top: 0.02cm;">varchar (1)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">N</p>
+           </td>
+           <td width="261">              
+      <p style="margin-top: 0.02cm;">Etat de la commande</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">NUMERO_CLI</p>
+           </td>
+           <td width="131">              
+      <p style="margin-top: 0.02cm;">int (11)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="261">              
+      <p style="margin-top: 0.02cm;">Numéro du client qui commande</p>
+           </td>
+         </tr>
+       
+  </tbody>
+</table>
+       
+<p><b><font face="Arial, Helvetica, sans-serif">Table LIGNE_COMMANDE</font></b></p>
+       
+<table width="610" border="1" bordercolor="#000000" cellpadding="1" cellspacing="0">
+         <col width="135"> <col width="130"> <col width="73"> <col width="263">          <tbody>
+    <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>ATTRIBUT</b></p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;"><b>TYPE</b></p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm; margin-bottom: 0cm;"><b>NULL</b></p>
+             
+      <p style="margin-top: 0.02cm;"><b>(interdit)</b></p>
+           </td>
+           <td width="263">              
+      <p style="margin-top: 0.02cm;"><b>SIGNIFICATION</b></p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>NUMERO_LIG</b></p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">int (11)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="263">              
+      <p style="margin-top: 0.02cm;">Numéro de la ligne de commande</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">QUANTITE_LIG</p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">int (11)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="263">              
+      <p style="margin-top: 0.02cm;">Quantité du produit commandé</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>NUMERO_COM</b></p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">int (11)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="263">              
+      <p style="margin-top: 0.02cm;">Numéro de la commande</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">NUMERO_PRO</p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">int (11)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="263">              
+      <p style="margin-top: 0.02cm;">Numéro du produit commandé
+             </p>
+           </td>
+         </tr>
+       
+  </tbody>
+</table>
+       
+<p><b><font face="Arial, Helvetica, sans-serif">Table PRODUIT</font></b></p>
+                
+<table width="610" border="1" bordercolor="#000000" cellpadding="1" cellspacing="0">
+  <col width="135"> <col width="130"> <col width="73"> <col width="263">
+         <tbody>
+    <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>ATTRIBUT</b></p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;"><b>TYPE</b></p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm; margin-bottom: 0cm;"><b>NULL</b></p>
+             
+      <p style="margin-top: 0.02cm;"><b>(interdit)</b></p>
+           </td>
+           <td width="263">              
+      <p style="margin-top: 0.02cm;"><b>SIGNIFICATION</b></p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;"><b>NUMERO_PRO</b></p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">int (11)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="263">              
+      <p style="margin-top: 0.02cm;">Numéro du produit</p>
+           </td>
+         </tr>
+         <tr valign="top">
+            <td width="135">              
+      <p style="margin-top: 0.02cm;">NOM_PRO</p>
+           </td>
+           <td width="130">              
+      <p style="margin-top: 0.02cm;">varchar (75)</p>
+           </td>
+           <td width="73">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="263">              
+      <p style="margin-top: 0.02cm;">Nom du produit</p>
+           </td>
+         </tr>
+         <tr>
+            <td width="135" valign="bottom">              
+      <p>PRIX_PRO</p>
+           </td>
+           <td width="130" valign="top">              
+      <p style="margin-top: 0.02cm;">float</p>
+           </td>
+           <td width="73" valign="top">              
+      <p style="margin-top: 0.02cm;">Y</p>
+           </td>
+           <td width="263" valign="top">              
+      <p style="margin-top: 0.02cm;">Prix du produit</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body></html>

@@ -1,3 +1,7 @@
+%-------------------------------
+%Auteurs: Burkhalter / Lienhard
+%-------------------------------
+
 clear all;
 
 %Déclaration de la matrice génératrice

@@ -43,8 +43,9 @@ mod(mot_info2*G,2)
 
 
 
-
+%---------------------------------
 %Partie Correction
+%---------------------------------
 sequence_error=[0 0 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 1 1 1 0]
 longueur=length(sequence_error)
 
@@ -60,21 +61,26 @@ mot_info_error(i,1:k)= sequence_error([(i-1)*k+1:i*k])
 
 mot_error = mod(mot_info_error*H,2)
 
+%--------------------------------
 %correction des erreurs
+%--------------------------------
 seq = [1 1 1 1 0 1 0];
 
-syndrome = mod(mot_info_error * H, 2) % correspond à la 4e ligne de H il faut donc changer le 4e bit de seq pour qu'il soit bon
-
-%Récupération des la taille de la matrice
+%Récupération des la taille de la matrice génératrice
 [k,n] = size(G)
 
+%tableau de resultat
 res = []
 for i = 0:(size(sequence_error,2) / n)-1
-    syndrome = mod(sequence_error(i*n+1:(i+1)*n) * H, 2);
-
+    seq
+    syndrome = mod(sequence_error(i*n+1:(i+1)*n) * H, 2)
+    
     erreur = 0;
-    if(mot_error == zeros(1,n-k))
-        
+    
+    %si il n'y a pas d'erreur
+    if(syndrome == zeros(1,n-k))
+    
+    %si il y a une erreur
     else
         for j = 1:n
             erreur = 1;
@@ -86,14 +92,10 @@ for i = 0:(size(sequence_error,2) / n)-1
         end
     end
     if erreur == 1
-        disp('Trop d erreur dans la séquence, on ne peut pas retrouver le mot info. Toutes les réponses suivantes sont fausses')
+        disp('Nombre trop grand d erreur,le mot info est introuvable.')
         break
     end
-    res = [res, mod(sequence_error(i*n+1:i*n+k), 2)];
+    res = [res, mod(sequence_error(i*n+1:i*n+k), 2)]
 end
-
+%on affiche le resultat
 res
-        
-            
-%end
-

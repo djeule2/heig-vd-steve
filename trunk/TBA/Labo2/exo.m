@@ -45,18 +45,21 @@ mod(G * Ht, 2)
 mod(codeWords * Ht, 2)
 
 %4.5
-seq = [1 1 1 1 0 1 0];
+seq = [1 1 1 1 0 1 0]
 
-syndrome = mod(seq * Ht, 2) % correspond à la 4e ligne de Ht il faut donc changer le 4e bit de seq pour qu'il soit bon
+
 
 %4.6
 seq = [0 0 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 0 0 1 1 1 1 0];
+
 res = [];
 
 for i = 0:(size(seq,2) / n)-1
-    syndrome = mod(seq(i*n+1:(i+1)*n) * Ht, 2);
+    seq
+    syndrome = mod(seq(i*n+1:(i+1)*n) * Ht, 2)
     err = 0;
-    lol = true;
+    n
+    Ht
     if(syndrome == zeros(1,n-k))
         
     else

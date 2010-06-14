@@ -5,41 +5,47 @@
  *      Author: steve
  */
 
-void entreeSalle()
-{
-	int dureePousse = rand() % 10 + 1;
-	int numeroClient = (int)arg;
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <stdbool.h>
+#include <psleep.h>
+#include "monitor.h"
 
-	while(true)
-	{
-		printf("le client nÂ° %d a les cheveux qui poussent \n",numeroClient);
-		sleep(dureePousse);
-		sem_wait(&mutex);
-	}
+void entreeSalle(int dureePousse, int numeroClient)
+{
+	printf("le client nÂ° %d a les cheveux qui poussent \n",numeroClient);
+	sleep(dureePousse);
+	//pthread_mutex_lock(&mutex);
 
 	while(nb_clients_attente >= NB_SIEGES)
 	{
 		printf("la salle d'attente est pleine, le client nÂ° %d ressort\n", numeroClient);
-		sem_post(&mutex);
+		pthread_mutex_unlock(&mutex);
 
 		sleep(dureePousse/2);
 		printf("Duree pousse : %d\n", dureePousse);
-		sem_wait(&mutex);
+		// prise du mutex
+		pthread_mutex_lock(&mutex);
 	}
+	//printf("le client n° %d est dans la salle d'attente\n", numeroClient);
+	//nb_clients_attente++;
+	//pthread_cond_wait(&salleAttente,&mutex);
+
 }
 
 
-void couperCheveux()
+void couperCheveux(int numeroClient)
 {
 	if(!barbier_endormi){
-		printf("le client nÂ° %d est entre dans la salle d'attente\n",numeroClient);
+		printf("le client n° %d est entre dans la salle d'attente\n",numeroClient);
 	}
 	else {
-		// On rÃ©veil le barbier
-		printf("le client nÂ° %d reveil le barbier\n",numeroClient);
+		// On réveil le barbier
+		printf("le client n° %d reveil le barbier\n",numeroClient);
 		barbier_endormi = false;
 		pthread_cond_signal(&barbierDort);
-		sem_post(&mutex);
 	}
 	nb_clients_attente++;
 	pthread_cond_wait(&salleAttente, &mutex);
@@ -50,24 +56,44 @@ void couperCheveux()
 
 void barbierCoupeCheveux()
 {
+  pthread_mutex_lock(&mutex);
 	if(nb_clients_attente){
 		// le barbier prend le client en attente sur la salle barbier
 		pthread_cond_signal(&salleAttente);
-		// le client sort de la salle d'attente pour aller chez le barbier
-		pthread_cond_signal(&client_dort);
-		nb_clients_attente--;
-		sem_post(&mutex);
+		pthread_mutex_unlock(&mutex);
 		// Il coupe les cheveux du client
 		sleep(dureeCoupe);
-		sem_post(&clientDort);
+		// le client sort de la salle d'attente pour aller chez le barbier
+		pthread_cond_signal(&clientDort);
+		nb_clients_attente--;
+		pthread_mutex_unlock(&mutex);
 	}
 	else{
-		barbier_endormi = true;
-		printf("le barbier dort\n");
-		sem_post(&mutex);
-		// le barbier s'endort
-		sem_wait(&barbierDort);
+    printf("le barbier dort\n");
+    pthread_cond_wait(&barbierDort, &mutex);
 	}
 
 }
+
+void initialiserTampon(){
+		 pthread_mutex_init(&mutex,NULL);
+		 pthread_cond_init(&clientDort,NULL);
+		 pthread_cond_init(&salleVide,NULL);
+		 pthread_cond_init(&sallePleine,NULL);
+		 pthread_cond_init(&barbierDort,NULL);
+		 pthread_cond_init(&salleAttente,NULL);
+
+}
+
+void detruireTampon(){
+		 pthread_mutex_destroy(&mutex);
+		 pthread_cond_destroy(&clientDort);
+		 pthread_cond_destroy(&salleVide);
+		 pthread_cond_destroy(&sallePleine);
+		 pthread_cond_destroy(&barbierDort);
+		 pthread_cond_destroy(&salleAttente);
+		 if (tampon != NULL){
+		 		free(tampon);
+				tampon = NULL;
+			}
 }

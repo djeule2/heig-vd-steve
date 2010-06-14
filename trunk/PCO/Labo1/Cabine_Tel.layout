@@ -6,11 +6,11 @@ LeftChar=1
 Open=1
 Top=0
 [Editors]
-Focused=3
+Focused=0
 Order=0,1,2,3
 [Editor_0]
 Open=1
-Top=0
+Top=1
 CursorCol=1
 CursorRow=12
 TopLine=1
@@ -24,10 +24,10 @@ TopLine=4
 LeftChar=1
 [Editor_3]
 Open=1
-Top=1
+Top=0
 CursorCol=21
 CursorRow=143
-TopLine=124
+TopLine=25
 LeftChar=1
 [Editor_4]
 Open=1

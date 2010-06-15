@@ -1,8 +1,8 @@
 /*
  * monitor.c
  *
- *  Created on: 8 juin 2010
- *      Author: steve
+ *  Created on: 1 juin 2010
+ *      Author: Burkhalter - Lienhard
  */
 
 #include <stdio.h>
@@ -13,87 +13,137 @@
 #include <psleep.h>
 #include "monitor.h"
 
-void entreeSalle(int dureePousse, int numeroClient)
-{
-	printf("le client nÂ° %d a les cheveux qui poussent \n",numeroClient);
-	sleep(dureePousse);
-	//pthread_mutex_lock(&mutex);
 
-	while(nb_clients_attente >= NB_SIEGES)
+bool entrerSalleAttente(int numeroClient)
+{
+
+	pthread_mutex_lock(&mutex);
+
+	// si la salle d'attente est pleine
+	if(nb_clients_attente == nb_sieges)
 	{
-		printf("la salle d'attente est pleine, le client nÂ° %d ressort\n", numeroClient);
 		pthread_mutex_unlock(&mutex);
 
-		sleep(dureePousse/2);
-		printf("Duree pousse : %d\n", dureePousse);
-		// prise du mutex
-		pthread_mutex_lock(&mutex);
+		return false;
 	}
-	//printf("le client n° %d est dans la salle d'attente\n", numeroClient);
-	//nb_clients_attente++;
-	//pthread_cond_wait(&salleAttente,&mutex);
+	// si le barbier travail déjà
+	if (!barbier_endormi)
+	{
+		// Se place dans la salle d'attente
+		nb_clients_attente++;
+		  // Déplace le pointeur sur le prochain siège libre
+		prochainSiege++;
+		prochainSiege = prochainSiege % nb_sieges;
+		printf("le client n° %d entre dans la salle d'attente\n", numeroClient);
+		pthread_mutex_unlock(&mutex);
 
-}
-
-
-void couperCheveux(int numeroClient)
-{
-	if(!barbier_endormi){
-		printf("le client n° %d est entre dans la salle d'attente\n",numeroClient);
-	}
-	else {
-		// On réveil le barbier
-		printf("le client n° %d reveil le barbier\n",numeroClient);
+		// Attend d'être appelé pour se faire raser
+		pthread_mutex_lock(&mutexMonitor);
+		pthread_cond_wait(&salleAttente[prochainSiege], &mutexMonitor);
+		pthread_mutex_unlock(&mutexMonitor);
+	 }
+	 else
+	 {
+		// Reveille le barbier
 		barbier_endormi = false;
+		printf("Client n° %d réveil le barbier \n", numeroClient);
+
+		// on signal au barbier qu'il y a un client
+		pthread_mutex_lock(&mutexMonitor);
+		// le client réveil le barbier avec la condition barbierDort
 		pthread_cond_signal(&barbierDort);
-	}
-	nb_clients_attente++;
-	pthread_cond_wait(&salleAttente, &mutex);
-	printf("le client nÂ° %d est entrain de se faire couper les cheveux\n",numeroClient);
-	pthread_cond_wait(&clientDort, &mutex);
-	printf("le client nÂ° %d a fini de se faire couper les cheveux\n",numeroClient);
+		pthread_mutex_unlock(&mutexMonitor);
+
+		pthread_mutex_unlock(&mutex);
+	 }
+	return true;
 }
 
-void barbierCoupeCheveux()
+void attenteCouperCheveux(void)
 {
-  pthread_mutex_lock(&mutex);
-	if(nb_clients_attente){
-		// le barbier prend le client en attente sur la salle barbier
-		pthread_cond_signal(&salleAttente);
-		pthread_mutex_unlock(&mutex);
-		// Il coupe les cheveux du client
-		sleep(dureeCoupe);
-		// le client sort de la salle d'attente pour aller chez le barbier
-		pthread_cond_signal(&clientDort);
-		nb_clients_attente--;
-		pthread_mutex_unlock(&mutex);
-	}
-	else{
-    printf("le barbier dort\n");
-    pthread_cond_wait(&barbierDort, &mutex);
-	}
-
+	pthread_mutex_lock(&mutexMonitor);
+	// le client se met en attente sur clientDort
+	pthread_cond_wait(&clientDort, &mutexMonitor);
+	pthread_mutex_unlock(&mutexMonitor);
 }
 
-void initialiserTampon(){
-		 pthread_mutex_init(&mutex,NULL);
-		 pthread_cond_init(&clientDort,NULL);
-		 pthread_cond_init(&salleVide,NULL);
-		 pthread_cond_init(&sallePleine,NULL);
-		 pthread_cond_init(&barbierDort,NULL);
-		 pthread_cond_init(&salleAttente,NULL);
+void CouperCheveux(void)
+{
+	pthread_mutex_lock(&mutexMonitor);
+	// le barbier réveil un client
+	pthread_cond_signal(&clientDort);
+	pthread_mutex_unlock(&mutexMonitor);
+}
+
+void barbierSendort()
+{
+	pthread_mutex_lock(&mutexMonitor);
+	barbier_endormi = true;
+	// le barbier se met en attente sur barbierDort
+	pthread_cond_wait(&barbierDort, &mutexMonitor);
+	pthread_mutex_unlock(&mutexMonitor);
+}
+
+bool salleOccupee(void)
+{
+	bool occupe = false;
+	pthread_mutex_lock(&mutex);
+	// si des clients sont dans la salle celle ci est occupée
+	if(nb_clients_attente != 0)
+		occupe = true;
+	pthread_mutex_unlock(&mutex);
+
+	return occupe;
+}
+
+void reveillerClient(void)
+{
+   pthread_mutex_lock(&mutex);
+   nb_clients_attente--;
+   // Déplace le pointeur sur le client suivant
+   clientEnCours++;
+   clientEnCours = clientEnCours % nb_sieges;
+   barbier_endormi = false;
+   pthread_mutex_unlock(&mutex);
+
+   // libère un siège
+   pthread_mutex_lock(&mutexMonitor);
+   pthread_cond_signal(&salleAttente[clientEnCours]);
+   pthread_mutex_unlock(&mutexMonitor);
+}
+
+
+void initialiserTampon(int NB_SIEGES){
+	pthread_mutex_init(&mutex,NULL);
+	pthread_cond_init(&clientDort,NULL);
+	pthread_cond_init(&barbierDort,NULL);
+	pthread_cond_init(&salleAttente,NULL);
+	salleAttente = malloc(nb_clients * sizeof(pthread_cond_t));
+
+	prochainSiege = 0;
+	clientEnCours = 0;
+	nb_clients_attente = 0;
+	nb_sieges = NB_SIEGES;
+	barbier_endormi = true;
+
+	salleAttente = malloc(nb_sieges * sizeof(pthread_cond_t));
+
+   unsigned int i;
+
+   for(i = 0; i < nb_sieges; i++)
+	  pthread_cond_init(&salleAttente[i], NULL);
 
 }
 
 void detruireTampon(){
-		 pthread_mutex_destroy(&mutex);
-		 pthread_cond_destroy(&clientDort);
-		 pthread_cond_destroy(&salleVide);
-		 pthread_cond_destroy(&sallePleine);
-		 pthread_cond_destroy(&barbierDort);
-		 pthread_cond_destroy(&salleAttente);
-		 if (tampon != NULL){
-		 		free(tampon);
-				tampon = NULL;
-			}
+	pthread_mutex_destroy(&mutex);
+	pthread_cond_destroy(&clientDort);
+	pthread_cond_destroy(&barbierDort);
+
+	// on libère la mémoire allouée
+	if (salleAttente != NULL){
+		free(salleAttente);
+		salleAttente = NULL;
+	}
+
 }

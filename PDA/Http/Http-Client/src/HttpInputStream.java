@@ -1,5 +1,6 @@
 import java.io.BufferedInputStream;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -51,35 +52,41 @@ public class HttpInputStream extends BufferedInputStream
 			return null;
 		else
 		{	
-			ecrire(line);
+			write(line);
 			return line;
 		}
 	}
 	
-	public void ecrire(String texte)
-	{
-			
+	public void write(String texte)
+	{	
+		File fichier = new File ("c:\\output.txt");
+	
+		// création du fichier de log si celui ci n'existe pas encore
+		if (!fichier.exists())
+		{
+		    try
+		    {
+		        fichier.createNewFile();
+		    }
+		    catch (IOException exception)
+		    {
+		        System.out.println ("Erreur " + exception.getMessage());
+		    }
+		}
+		
+		// écriture dans le fichier de log
 		try
 		{
-			
-//			FileWriter writer = new FileWriter("c:\\output.txt");
-//			
-//			BufferedWriter output = new BufferedWriter(writer);
-//
-//			output.append(texte);
-//			
-//			output.flush();
-//			output.close();
-			
-			Writer writer = new FileWriter("c:\\out.txt");
-			writer.append(texte);
+			Writer writer = new FileWriter(fichier,true);
+			writer.append(texte+"\r\n");					
 			writer.flush();
 			writer.close();
+	
 		}
 		catch(IOException ioe){
 			System.out.print("Erreur : ");
 			ioe.printStackTrace();
-			}
+		}
 
 	}
 	
